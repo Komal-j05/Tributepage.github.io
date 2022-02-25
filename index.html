@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="abc.css">
+    <title>Tribute Page</title>
+</head>
+<body>
+    <section>
+	<h2>A. P. J. Abdul Kalam</h2>
+	<h2>Former President of India</h2>
+	  <div class="image">
+            <div class="tiles"></div>
+        </div>
+		
+        
+    </section>
+	<p align="right">
+	<a class="fcc-btn" href="profile.html">Click Here</a>
+	</p>
+	<script type="text/javascript">
+		window.onload=function(){
+		document.getElementById("my_audio").play();
+	}
+	</script>
+
+    <script>
+        const image=document.getElementsByClassName('image')[0];
+        const tiles=document.getElementsByClassName('tiles');
+        for(var i=0;i<400;i++){
+            image.innerHTML += "<div class='tiles'></div>";
+            tiles[i].style.animationDelay= `${i * 0.05}s`;
+             
+        }
+    </script>
+</body>
+</html>
